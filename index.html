@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+```
+<div class="container">
+    <h1>Image Classification</h1>
+    <p>Upload an image to identify what it contains.</p>
+
+    <div class="upload-box">
+        <h2>Upload Your Image</h2>
+
+        <input type="file" id="imageInput" accept="image/*">
+
+        <button id="predictButton" disabled>
+            Classify Image
+        </button>
+
+        <p id="status"></p>
+
+        <div id="preview">
+            <img id="imagePreview" alt="Image Preview" hidden>
+        </div>
+    </div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MobileNet Image Classifier</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>MobileNet Image Classifier</h1>
+
+        <p>
+            Upload an image and let MobileNetV2 predict what it contains.
+        </p>
+
+        <div class="upload-box">
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+            >
+
+            <button onclick="predictImage()">
+                Predict Image
+            </button>
+
+        </div>
+
+        <div id="preview"></div>
+
+        <div id="result">
+            <h2>Prediction Result</h2>
+            <p id="message">Please upload an image.</p>
+        </div>
+
+    </div>
+
+    <script src="/js/script.js"></script>
+
+</body>
+</html>
+
+    <div id="result" hidden>
+        <h2>Prediction Result</h2>
+
+        <p id="prediction" class="prediction"></p>
+        <p id="confidence" class="prediction"></p>
+
+        <h3>Other Predictions</h3>
+        <ul id="predictionList"></ul>
+    </div>
+</div>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
